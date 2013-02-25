@@ -555,7 +555,7 @@ $(OBJDIR)/%.d: %.s
 
 # the pde -> cpp -> o file
 $(OBJDIR)/%.cpp: %.$(SUFFIX)
-	@echo "Producing $a"
+	@echo "Producing $@"
 	@if [ $(CORE_INCLUDE_NAME) ] ; then $(ECHO) $(PDEHEADER) > $@ ; echo Including $(CORE_INCLUDE_NAME) ; fi
 	@cat  $< >> $@
 
